@@ -7,6 +7,7 @@ Hello, this is Sanjana!
 ## Project Question
 
 How can we model the firing of neurons in the visual cortex of a mouse upon recognizing a stimulus using machine learning? 
+Furthermore, after the model is finished, will it be responsive to an image despite various orderings of visual patterns or not? (If it is not, we can then prove that the visual cortex likely uses contextual visual information in image recognition instead of an expected "feed-in, feed-out" visual response.
 
 ## Project Description
 
