@@ -13,7 +13,9 @@ Furthermore, after the model is finished, will it be responsive to an image desp
 
 1) Machine Learning Decoder: multiclass classification
 
-Try to predict the letter displayed at a given time and get the computer to do it better and better with more trials! We essentially want to make a model of how the visual cortex learns image-based information (where learning is exposure then subsequent recognition).
+Try to predict the letter displayed at a given time and get the computer to do it better and better with more trials! We essentially want to make a model of the visual cortex which can learn image-based information (where learning is exposure then subsequent recognition). 
+
+Once we make this model as accurate as possible, we can input variations of patterns into the model to see if the visual cortex learns using a significantly context-based appraoch. 
 
 2) Data Analysis: demonstrative
 
