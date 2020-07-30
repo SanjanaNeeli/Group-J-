@@ -23,7 +23,7 @@ Set up threshold → if a cell increases beyond a certain point, you take it as 
 
 
 ## Model Templates/Journal Articles
+Decoding Neural Responses in Mouse Visual Cortex through a Deep Neural Network: https://arxiv.org/ftp/arxiv/papers/1911/1911.05479.pdf
 
-TODO
 
 ## Questions or Thoughts
