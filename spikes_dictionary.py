@@ -28,7 +28,7 @@ for row in spikes:
     cell_dict.update({'cell '+ str(cell_id) : spikes[frames:frames+4]})
     frames +=4 #moves to the next column set
 
-# print(cell_0)
+print(cell_0)
 # print(cell_dict)
 
     
