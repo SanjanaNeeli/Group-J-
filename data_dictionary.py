@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Wed Aug  5 11:08:19 2020
-
-@author: jesdai
+@author: sneeli
 """
 
 
@@ -68,3 +67,46 @@ dict = {'A' : a,'B' : b,'C' : c,'D' : d,'gray': gray}
 print(dict)
 
 #print (dict)
+
+def collapseSpike (dictD, dirD):
+    ina = [] #intermediate a list
+    inb = [] #intermediate b list
+    inc = [] #intermediate c list
+    ind = [] #intermediate d list
+    ingray = [] #intermediate gray list
+    
+    #iterate through the keys in provided dictionary
+    for key in dictD.keys():
+        
+        # access the list of matrices for a particular key
+        key_list = dictD[key]
+        
+        #iterates through the various matrices in a single list
+        for x in key_list:
+            
+            #collapses matrix, based on provided axis
+            coll_mat = np.mean(x, axis = dirD)
+            
+            if (key == 'A'):
+                ina.append(coll_mat)
+            elif (key == 'B'):
+                inb.append(coll_mat)
+            elif (key == 'C'):
+                inc.append(coll_mat)
+            elif (key == 'D'):
+                ind.append(coll_mat)
+            elif (key == 'gray'):
+                ingray.append(coll_mat)
+        
+    # returns new dictionary
+    # same event keys
+    # corresponding values = list of collapsed matrices
+    dict_ret = {'A' : ina,'B' : inb,'C' : inc,'D' : ind,'gray': ingray}
+    
+    return dict_ret
+    
+    
+
+
+
+
