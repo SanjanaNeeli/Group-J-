@@ -60,4 +60,3 @@ with open (datadir / 'event_info.csv') as csvfile:
 dict = {'A' : a,'B' : b,'C' : c,'D' : d,'gray': gray}
 
 #print (dict)
-
