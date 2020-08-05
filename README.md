@@ -12,7 +12,7 @@ Furthermore, after the model is finished, will it be responsive to an image desp
 
 ## Project Description
 
-1) Machine Learning Decoder: multiclass classification
+1) Machine Learning Decoder: linear regression multiclass classification
 
 Try to predict the letter displayed at a given time and get the computer to do it better and better with more trials! We essentially want to make a model of the visual cortex which can learn image-based information (where learning is exposure then subsequent recognition). 
 
