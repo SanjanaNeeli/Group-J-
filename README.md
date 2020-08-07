@@ -24,14 +24,21 @@ https://acadgild.com/blog/logistic-regression-multiclass-classification
 Decoding Neural Responses in Mouse Visual Cortex through a Deep Neural Network: https://arxiv.org/ftp/arxiv/papers/1911/1911.05479.pdf
 
 ### Background Reading: 
+
 Number detectors spontaneously emerge in a deep neural network designed for visual object recognition: https://advances.sciencemag.org/content/5/5/eaav7903
+
 How well do deep neural networks trained on object recognition characterize the mouse visual system? https://openreview.net/pdf?id=rkxcXmtUUS
+
 High precision coding in mouse visual cortex: https://www.biorxiv.org/content/10.1101/679324v1.full.pdf
+
 Neuronal Activities in the Mouse Visual Cortex Predict Patterns of Sensory Stimuli: https://sci-hub.tw/https://link.springer.com/article/10.1007/s12021-018-9357-1#
+
 Decoding Neural Responses in Mouse Visual Cortex through a Deep Neural Network: https://arxiv.org/pdf/1911.05479.pdf
 
 High-dimensional geometry of population responses in visual cortex: Carsen Stringer, Marius Pachitariu, Nicholas Steinmetz, Matteo carandini & Kenneth D. Harris
+
 Learned spatiotemporal sequence recognition and prediction in primary visual cortex: Jeffrey P Gavornik & Mark F Bear
+
 Architecture, Function, and Assembly of the Mouse Visual System: Tania A. Seabrook,Timothy J. Burbridge, Michael C. Crair, and Andrew D. Huberman
 
 
