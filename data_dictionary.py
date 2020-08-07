@@ -105,7 +105,20 @@ def collapseSpike (dictD, dirD):
     
     return dict_ret
     
-    
+    def combine(dictD,dirD):
+    stackstall=np.array([])
+    stacksflat=np.array([])
+
+    for key in dictD.keys():
+        
+        key_list=dict[key]
+        
+        for x in key_list:
+            #x=np.squeeze(np.asarray(x) #turns  matrices to array
+            stackstall= np.hstack((stackstall, x))
+        stacksflat=np.bstack(stacksflat,key)                         
+            
+
 
 
 
