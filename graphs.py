@@ -24,6 +24,7 @@ cell_ID = 14
 #Figure building
 fig, ax = plt.subplots(4)
 fig.suptitle('Repeated Pattern')
+fig.tight_layout(pad=-.3)
 
 #set_xlim is based on the event_info excel file. 
 #Based on what you want to graph, put the frame intervals for a pattern
