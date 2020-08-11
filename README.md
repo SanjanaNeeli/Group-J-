@@ -13,7 +13,11 @@ Furthermore, after the model is finished, will it be responsive to an image desp
 
 The primary visual cortex (V1) has been extensively studied in the context of sensory processing but less so with respect to temporal processing, including the formation of memories specific to the temporal and ordinal characteristics of its input. The formation of spatiotemporal memories is critical to the ability of an organism to predict outcomes based on experience and detect potentially important deviations from expectations. To study this phenomenon, we used two-photon calcium imaging data from the primary visual cortex of awake mice while viewing sequential stimuli, including one sequence that had been presented to the mice over five days as well as variations that recorded the images presented. Our intended goal was to describe how V1 represents stimuli presented in  the context of a learned sequence with its representation to the same stimuli in an unlearned temporal context.
 
-We initially compared the activity in V1 during recognition of known visual patterns and exposure to novel patterns by graphing activity patterns recorded from the two situations. Then, we recorded the global average activity among all cells and after comparing the two plots, we found a significant difference between the learned sequence and its variations. To build on these results, we used logistic regression, a multi-class classification machine-learning algorithm, to determine if a model trained on an ordered pattern could accurately identify the ordered and disordered testing data. 
+We initially compared the activity in V1 during recognition of known visual patterns and exposure to novel patterns by graphing activity patterns recorded from the two situations. Then, we recorded the global average activity among all cells and after comparing the two plots, we found a significant difference between the learned sequence and its variations. To build on these results, we used 
+  1. logistic regression, a multi-class classification
+  2. Naive Bayes 
+  3. XG Boost Classifier
+to determine if a model trained on an ordered pattern could accurately identify the ordered and disordered testing data. 
 
 ## Model Templates/Journal Articles
 
