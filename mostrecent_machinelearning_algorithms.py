@@ -2,25 +2,34 @@
 """
 Created on Fri Aug  7 12:23:24 2020
 
-@author: jesdai
+@author: Jessica Dai, Sanjana Neeli, Madison Yee
 """
 #from sklearn.datasets import fetch_mldata
 from sklearn.preprocessing import StandardScaler
 from sklearn import metrics
 from sklearn.model_selection import train_test_split
+
+# import classifiers!
+from sklearn.naive_bayes import GaussianNB
+from xgboost import XGBClassifier
 from sklearn.linear_model import LogisticRegression
 
+# import resources
 from pathlib import Path
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import csv
 
+# Madison and Jessica's Path
 datadir = Path("B-1")
+# Sanjana's Path
+# datadir = Path("dataRISE")
+
 spikes = np.load(datadir/ "spikes.npy")
 
+# -------- PREPROCESSING DATA -------------------
 spA = np.asarray(spikes) #spikes array
-
 
 spA=np.transpose(spA)
 newlist=[]
@@ -59,7 +68,7 @@ print(np.shape(event_code))
 spA_=np.array(newlist)
 print(np.shape(spA_))
 
-#--------DATA TRAINING--------------------------------------------------------
+#------- DATA TRAINING -------------------------------------------------------
 
 # test_size: what proportion of original data is used for test set
 train_img, test_img, train_lbl, test_lbl = train_test_split(
@@ -69,13 +78,14 @@ train_img, test_img, train_lbl, test_lbl = train_test_split(
     train_size=0.8, 
     random_state=122)
 
-
 scaler = StandardScaler()
 # Fit on training set only.
 scaler.fit(train_img)
 # Apply transform to both the training set and the test set.
 train_img = scaler.transform(train_img)
 test_img = scaler.transform(test_img)
+
+# ------- LOGISTIC REGRESSION --------------------------
 
 model = LogisticRegression(solver = 'lbfgs')
 model.fit(train_img, train_lbl)
@@ -90,6 +100,29 @@ print('Accuracy: {:.2f}'.format(accuracy))
 
 '''Misclassified samples: 829
 Accuracy: 0.92'''
+
+
+# ------- Naive Bayesian Approach ------------------------
+print('Naive Bayesian ML Algorithm')
+classifier = GaussianNB()
+clf=classifier.fit(train_img, train_lbl)
+y_pred = clf.predict(test_img)
+# how did our model perform?
+count_misclassified = (test_lbl != y_pred).sum()
+print('Misclassified samples: {}'.format(count_misclassified))
+accuracy = metrics.accuracy_score(test_lbl, y_pred)
+print('Accuracy: {:.2f}'.format(accuracy))
+
+# ------ XGBoost --------------------------
+print('xgboost ML Algorithm')
+classifier = XGBClassifier()
+classifier.fit(train_img, train_lbl)
+y_pred = clf.predict(test_img)
+# how did our model perform?
+count_misclassified = (test_lbl != y_pred).sum()
+print('Misclassified samples: {}'.format(count_misclassified))
+accuracy = metrics.accuracy_score(test_lbl, y_pred)
+print('Accuracy: {:.2f}'.format(accuracy))
     
     
     
