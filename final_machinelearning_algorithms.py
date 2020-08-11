@@ -2,7 +2,7 @@
 """
 Created on Tue Aug  4 16:22:14 2020
 
-@author: myee827
+@author: Madison Yee, Sanjana Neeli, Jessica Dai
 """
 
 #These imports are the from the tutorial but we can 
@@ -40,12 +40,11 @@ scaler.fit(train_img)
 train_img = scaler.transform(train_img)
 test_img = scaler.transform(test_img)
 
+## LINEAR REGRESSION
 model = LogisticRegression(solver = 'lbfgs')
-
 #use our data, train_img is our training data, and train_lbl is 
 #the corresponding event code 
 model.fit(train_img, train_lbl)
-
 # use the model to make predictions with the test data
 # rather than test_img, use the test data
 y_pred = model.predict(test_img)
