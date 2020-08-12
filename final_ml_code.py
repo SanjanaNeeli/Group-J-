@@ -42,6 +42,7 @@ with open (datadir / 'frame_info.csv') as csvfile:
     
     events = csv.reader(csvfile, delimiter = ',' ) 
 
+    #goes through each row in column 11 and adds a number to event_code based on the input being shown 
     for row in events:
         #event_code.append(row[12])
         if "A" in row[11]:
