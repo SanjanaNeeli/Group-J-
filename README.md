@@ -17,13 +17,13 @@ We initially compared the activity in V1 during recognition of known visual patt
 
 ## Project Links
 
-Presentation: 
-Poster: 
+- Presentation: https://docs.google.com/presentation/d/1QS2xOSVfgh8UO3TL434r5jvNzsHwt9vmOTmXXa6bZcE/edit?usp=sharing
+- Poster: https://docs.google.com/presentation/d/1SJ7LZhtW302HkV9uFqM7PDJqftCkQnxnZ12yT2DBHw0/edit?usp=sharing
 
 
 ## Model Templates/Journal Articles
 
-### ML template: 
+### Machine Learning template: 
 https://acadgild.com/blog/logistic-regression-multiclass-classification
 
 ### Key text:
