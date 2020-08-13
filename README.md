@@ -15,6 +15,12 @@ The primary visual cortex (V1) has been extensively studied in the context of se
 
 We initially compared the activity in V1 during recognition of known visual patterns and exposure to novel patterns by graphing activity patterns recorded from the two situations. Then, we recorded the global average activity among all cells and after comparing the two plots, we found a significant difference between the learned sequence and its variations. To build on these results, we used (1) logistic regression, a multi-class classification (2) Naive Bayes (3) XG Boost Classifier to determine if a model trained on an ordered pattern could accurately identify the ordered and disordered testing data. 
 
+## Project Links
+
+Presentation: 
+Poster: 
+
+
 ## Model Templates/Journal Articles
 
 ### ML template: 
@@ -26,19 +32,12 @@ Decoding Neural Responses in Mouse Visual Cortex through a Deep Neural Network: 
 ### Background Reading: 
 
 Number detectors spontaneously emerge in a deep neural network designed for visual object recognition: https://advances.sciencemag.org/content/5/5/eaav7903
-
 How well do deep neural networks trained on object recognition characterize the mouse visual system? https://openreview.net/pdf?id=rkxcXmtUUS
-
 High precision coding in mouse visual cortex: https://www.biorxiv.org/content/10.1101/679324v1.full.pdf
-
 Neuronal Activities in the Mouse Visual Cortex Predict Patterns of Sensory Stimuli: https://sci-hub.tw/https://link.springer.com/article/10.1007/s12021-018-9357-1#
-
 Decoding Neural Responses in Mouse Visual Cortex through a Deep Neural Network: https://arxiv.org/pdf/1911.05479.pdf
-
 High-dimensional geometry of population responses in visual cortex: Carsen Stringer, Marius Pachitariu, Nicholas Steinmetz, Matteo carandini & Kenneth D. Harris
-
 Learned spatiotemporal sequence recognition and prediction in primary visual cortex: Jeffrey P Gavornik & Mark F Bear
-
 Architecture, Function, and Assembly of the Mouse Visual System: Tania A. Seabrook,Timothy J. Burbridge, Michael C. Crair, and Andrew D. Huberman
 
 
